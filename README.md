@@ -1,2 +1,2 @@
-# Code-Academy-Assignments
- Contains all assignments created during the Full Stack Developer course from Code Academy Pro.
+# Code-Academy-Projects
+ Contains all projects created during the Full Stack Developer course from Code Academy Pro.
