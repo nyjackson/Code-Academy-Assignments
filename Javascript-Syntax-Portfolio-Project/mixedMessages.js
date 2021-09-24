@@ -1,7 +1,13 @@
-const messages = {
-beginning: ["Don't underestimate yourself!", "You are capable of greatness."],
-middle:["But don't overestimate yourself either.", "Only if you try!"],
-end:["Be yourself.", "Be someone else."]
+const trafficConditions = {
+    density: ['Light', 'Heavy', 'Medium','Rush Hour'],
+    weather:['Rainy','Sunny', 'Snowy', 'Cloudy'],
+    delay: ['no', 'an hour', 'a 2 hour', ' a 30 min'],
+    selectRandom(){
+        let densityRand = this.density[Math.floor(Math.random() * this.density.length)]
+        let weatherRand = this.weather[Math.floor(Math.random() * this.weather.length)]
+        let delayRand = this.delay[Math.floor(Math.random() * this.delay.length)]
+        return `Traffic is currently ${densityRand}, with ${delayRand} delay. The weather is ${weatherRand}`
+    },
 };
 
-console.log("Hello")
+console.log(trafficConditions.selectRandom())
